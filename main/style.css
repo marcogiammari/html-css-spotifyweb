@@ -1,0 +1,82 @@
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+body > .container {
+    max-height: calc(100vh - 4rem);
+}
+
+aside > nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: black;
+    width: 36vw;
+    height: calc(100vh - 4rem);
+    z-index: 2;
+}
+
+aside > nav > div {
+    min-height: 5rem;
+    border: 1px solid white;
+}
+
+aside > nav > .logo {
+    min-height: 5rem;
+}
+
+.upgrade-bar {
+    position: sticky;
+    top: 0;
+    min-height: 5rem;
+    background-color: blue;
+}
+
+.nav-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.albums {
+    overflow-y: auto;
+}
+
+.album {
+    background-color: yellow;
+    padding: 1rem;
+}
+
+.player {
+    position: sticky;
+    bottom: 0;
+    min-height: 4rem;
+    background-color: darkgrey;
+    z-index: 3;
+}
+

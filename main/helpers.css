@@ -1,0 +1,35 @@
+.flex                       {display: flex;}
+.flex-dir-col               {flex-direction: column;}
+.just-cont-space-around     {justify-content: space-around;}
+.just-cont-space-between    {justify-content: space-between;}
+.just-cont-center           {justify-content: center;}
+.just-cont-end              {justify-content: flex-end;}
+.align-items-center         {align-items: center;}
+.align-items-start          {align-items: flex-start;}
+.align-items-end            {align-items: flex-end;}
+.flex-wrap                  {flex-wrap: wrap;}
+.w100                       {width: 100%;}
+.h100                       {height: 100%;}
+.col-1-3                    {width: calc(100% / 3);}
+.col-1-2                    {width: 50%;}
+.italic                     {font-style: italic;}
+.gap24                      {gap: 1.5rem}
+.pad24                      {padding: 1.5rem;}
+.txt-align-center           {text-align: center;}
+.underlined                 {text-decoration: underline;}
+.font64                     {font-size: 4rem;}
+.font32                     {font-size: 2rem}
+.font20                     {font-size: 1.25rem}
+.font14                     {font-size: .875rem;}
+.line-height24              {line-height: 1.5rem}
+.line-height32              {line-height: 2rem;}
+
+
+
+
+/* DEBUG */
+
+div {
+    border: 1px solid blue;
+    outline: 1px solid green;
+}
