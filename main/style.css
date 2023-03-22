@@ -14,7 +14,7 @@ img {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -26,29 +26,32 @@ ul {
     list-style: none;
 }
 
-
-
 body > .container {
     max-height: calc(100vh - 4rem);
 }
 
-aside > nav {
-    position: sticky;
-    left: 0;
-    top: 0;
+
+/* HEADER */
+header > nav {
     background-color: black;
     width: 36vw;
     height: calc(100vh - 4rem);
     z-index: 2;
 }
 
-aside > nav > div {
+header > nav > div {
     min-height: 5rem;
     border: 1px solid white;
 }
 
-aside > nav > .logo {
+header > nav > .logo {
     min-height: 5rem;
+}
+
+
+/* MAIN */
+main {
+    overflow: auto;
 }
 
 .upgrade-bar {
@@ -72,11 +75,10 @@ aside > nav > .logo {
     padding: 1rem;
 }
 
+
+/* FOOTER */
 .player {
-    position: sticky;
-    bottom: 0;
     min-height: 4rem;
     background-color: darkgrey;
-    z-index: 3;
 }
 
