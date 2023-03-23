@@ -91,6 +91,7 @@ main img {
     min-height: 10vh;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
 .upgrade-bar button {
