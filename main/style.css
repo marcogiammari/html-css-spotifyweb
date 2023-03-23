@@ -74,7 +74,7 @@ header > nav p {
 
 /* MAIN */
 main {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 main img {
@@ -85,12 +85,27 @@ main img {
     position: sticky;
     top: 0;
     min-height: 10vh;
-    background-color: blue;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-wrapper {
-    width: 80%;
-    margin: auto;
+.upgrade-bar button {
+    border: 1px solid white;
+    border-radius: 3rem;
+    padding: .5rem 2.5rem;
+    font-weight: 700;
+}
+
+
+
+main .nav-wrapper nav {
+    white-space: nowrap;
+    gap: .5rem;
+}
+
+.col {
+    width: calc((100% - 2rem) / 4);
+    padding-bottom: 1rem;
 }
 
 .albums {
@@ -98,10 +113,20 @@ main img {
 }
 
 .album {
-    background-color: yellow;
     padding: 1rem;
+    gap: .5rem;
 }
 
+main p {
+    color: #7a7a7a;
+    font-size: .625rem;
+    font-weight: 700;
+}
+
+main h3 {
+    font-size: .75rem;
+    font-weight: 700;
+}
 
 /* FOOTER */
 .footer-player {
@@ -121,7 +146,7 @@ main img {
 
 @media screen and (min-width: 481px) {
     header > nav {
-        width: 15rem;
+        width: 12rem;
     }
 
     .logo {
@@ -136,6 +161,7 @@ main img {
 
     .logo img {
         height: 70%;
+        max-width: 100%;
     }
 
     .install {
@@ -150,10 +176,25 @@ main img {
         display: none;
     }
     
+    .nav-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .nav-wrapper nav {
+        font-size: .75rem;
+    }
+
+    .col {
+        width: calc((100% - 3rem) / 3);
+    }
 }
 
 
 @media screen and (min-width: 769px) {
+    .col {
+        width: calc((100% - 5rem) / 5);
+    }
     .album {
         width: 25%;
     }
@@ -164,6 +205,16 @@ main img {
 }
 
 @media screen and (min-width: 1025px) {
+    main .nav-wrapper nav {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .col {
+        width: auto;
+    }
+
     .album {
         width: calc(100% / 6);
     }
