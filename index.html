@@ -51,7 +51,10 @@
                         <p>Nome Playlist</p>
                         <p>Nome Playlist</p>
                         <p>Nome Playlist</p>
-                        <div class="flex align-items-center"><i class="font32 fa-solid fa-square-plus"></i><span>Crea Playlist</span></div> 
+                        <div class="flex align-items-center">
+                            <i class="font32 fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </div> 
                         <p>Nome Playlist</p>
                         <p>Nome Playlist</p>
                         <p>Nome Playlist</p>
@@ -82,7 +85,7 @@
                 <div class="upgrade-bar flex just-cont-end align-items-center">
                     <button class="font12">EFFETTUA L'UPGRADE</button>
                 </div>
-                <div class="nav-wrapper">
+                <div class="nav-wrapper pad-b-16">
                     <nav class="flex flex-wrap just-cont-space-around txt-align-center font8">
                         <div class="col">
                             <h4 class="txt-grey">IN EVIDENZA</h4>
@@ -159,7 +162,7 @@
                                 <h3>A cure for wellness</h3>
                             </div>
                             <div class="album-sub">
-                                <p>Prova</p>
+                                <p>Subtitle</p>
                             </div>
                         </div>
                         <div class="album col-1-2 flex flex-dir-col align-items-center">
@@ -211,30 +214,42 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-player flex">
-            <div class="now-playing col-1-3 flex align-items-center">
-                <div class="song-album col-1-3">
-                    IMG
+        <div class="footer-player flex just-cont-space-between bg-grey">
+            <div class="now-playing col-1-3 flex align-items-center gap8">
+                <div class="song-album">
+                    <img src="img/sinister.jpeg" alt="Sinister Album">
                 </div>
-                <div class="song-info col-1-3 flex flex-dir-col">
-                    Sinister
-                    Prova prova
+                <div class="song-info flex flex-dir-col">
+                    <p class="txt-white font10">Sinister</p>
+                    <span class="txt-grey font8">Brano</span>
+                    <span class="txt-grey font8">Nome</span>
                 </div>
-                <div class="song-actions col-1-3 flex flex-dir-col">
-                    ICONA
-                    ICONA
-                </div>
-            </div>
-            <div class="controls col-1-3 flex flex-dir-col just-cont-center align-items-center">
-                <div>
-                    icona icona icona icona icona
-                </div>
-                <div>
-                    barra di avanzamento
+                <div class="song-actions flex flex-dir-col font12 gap4">
+                    <i class="txt-grey fa-regular fa-heart"></i>
+                    <i class="txt-grey fa-regular fa-folder"></i>
                 </div>
             </div>
-            <div class="audio-settings col-1-3 flex align-items-center">
-                <div>icona icona icona barra del volume</div>
+            <div class="controls w100 flex flex-dir-col just-cont-center align-items-center gap8 txt-white">
+                <div class="flex align-items-center gap12">
+                    <i class="fa-solid fa-shuffle"></i> 
+                    <i class="fa-solid fa-backward-step"></i> 
+                    <i class="play-btn font20 fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="flex gap4 just-cont-space-between align-items-center">
+                    <span class="txt-white font8">0.25</span>
+                    <hr class="progress-bar">
+                    <span class="txt-white font8">4.35</span>
+                </div>
+            </div>
+            <div class="audio-settings col-1-3 flex just-cont-end align-items-center">
+                <div class="flex align-items-center gap4 font12 txt-white">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <span class="audio-speaker font16">&#128362;</span>
+                    <hr class="progress-bar">
+                </div>
             </div>
         </div>
     </footer>

@@ -130,10 +130,28 @@ main h3 {
 
 /* FOOTER */
 .footer-player {
-    min-height: 10vh;
-    background-color: darkgrey;
+    height: 10vh;
+    padding: 0 .5rem;
 }
 
+.footer-player .now-playing img {
+    height: 3rem;
+}
+
+.footer-player .progress-bar {
+    border: none;
+    height: .125rem;
+    width: 20vw;
+    background: linear-gradient(to left, #7a7a7a 80%, #fff 20%);
+}
+
+.footer-player .audio-settings .audio-speaker {
+    transform: rotate(180deg);
+}
+
+.footer-player .audio-settings .progress-bar {
+    width: 10vw;
+}
 
 /* MEDIA QUERIES */
 
@@ -200,6 +218,10 @@ main h3 {
     }
     .albums {
         flex-wrap: wrap;
+    }
+
+    .footer-player .play-btn {
+        padding: 0 1rem;
     }
     
 }
