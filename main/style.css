@@ -32,6 +32,10 @@ header > nav {
     padding: .5rem;
 }
 
+.header svg {
+    color: #7a7a7a;
+}
+
 .logo-small {
     display: flex;
     justify-content: center;
@@ -85,7 +89,7 @@ main img {
     position: sticky;
     top: 0;
     min-height: 10vh;
-    padding: .5rem;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -94,6 +98,7 @@ main img {
     border-radius: 3rem;
     padding: .5rem 2.5rem;
     font-weight: 700;
+    transition: .5s;
 }
 
 
@@ -153,6 +158,48 @@ main h3 {
     width: 10vw;
 }
 
+/* HOVER */
+.hover-white:hover {
+    color: #fff;
+}
+
+.upgrade-bar button:hover {
+    transform: scale(1.1);
+}
+
+.nav-wrapper nav h4:hover {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #141922, rgba(255,249,34), #141922);
+    border-image-slice: 1;
+    width:100%;
+}
+
+.album-img {
+    position: relative;
+}
+
+.album-img:hover img {
+    filter: opacity(0.5);
+}
+
+.album:hover img {
+    filter: opacity(0.5);
+}
+
+.play-hover {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.album-img:hover .play-hover {
+    visibility: visible;
+}
+
 /* MEDIA QUERIES */
 
 /* 320px — 480px: Mobile devices
@@ -199,10 +246,6 @@ main h3 {
         margin: auto;
     }
 
-    .nav-wrapper nav {
-        font-size: .75rem;
-    }
-
     .col {
         width: calc((100% - 3rem) / 3);
     }
@@ -210,6 +253,10 @@ main h3 {
 
 
 @media screen and (min-width: 769px) {
+    .nav-wrapper nav {
+        font-size: .75rem;
+    }
+
     .col {
         width: calc((100% - 5rem) / 5);
     }
@@ -227,6 +274,10 @@ main h3 {
 }
 
 @media screen and (min-width: 1025px) {
+    .nav-wrapper nav {
+        font-size: 1rem;
+    }
+
     main .nav-wrapper nav {
         flex-wrap: nowrap;
         justify-content: center;
