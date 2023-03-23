@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -27,25 +22,53 @@ ul {
 }
 
 body > .container {
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 10vh);
 }
-
 
 /* HEADER */
 header > nav {
     background-color: black;
-    width: 36vw;
-    height: calc(100vh - 4rem);
-    z-index: 2;
+    height: 100%;
+    padding: .5rem;
 }
 
-header > nav > div {
-    min-height: 5rem;
-    border: 1px solid white;
+.logo-small {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
 
-header > nav > .logo {
-    min-height: 5rem;
+.install {
+    margin-left: -5%;
+}
+
+header > nav > div:first-child {
+    overflow-y: auto;
+}
+
+.playlists {
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+header > nav img {
+    height: 1rem;
+}
+
+header > nav span,
+header > nav p {
+    font-size: .875rem;
+    font-weight: 600;
+    padding-left: .5rem;;
+}
+
+.thin {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 
 
@@ -54,10 +77,14 @@ main {
     overflow: auto;
 }
 
+main img {
+    max-width: 100%;
+}
+
 .upgrade-bar {
     position: sticky;
     top: 0;
-    min-height: 5rem;
+    min-height: 10vh;
     background-color: blue;
 }
 
@@ -77,8 +104,68 @@ main {
 
 
 /* FOOTER */
-.player {
-    min-height: 4rem;
+.footer-player {
+    min-height: 10vh;
     background-color: darkgrey;
 }
 
+
+/* MEDIA QUERIES */
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+@media screen and (min-width: 481px) {
+    header > nav {
+        width: 15rem;
+    }
+
+    .logo {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    header > nav div {
+        padding: .5rem;
+    }
+
+    .logo img {
+        height: 70%;
+    }
+
+    .install {
+        margin-left: 0;
+    }
+
+    .display-s {
+        display: block;
+    }
+
+    .display-none-s {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 769px) {
+    .album {
+        width: 25%;
+    }
+    .albums {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .album {
+        width: calc(100% / 6);
+    }
+
+}
