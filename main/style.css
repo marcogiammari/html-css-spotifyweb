@@ -46,6 +46,10 @@ header > nav {
     color: #7a7a7a;
 }
 
+.logo svg {
+    color: #fff;
+}
+
 .logo-small {
     display: flex;
     justify-content: center;
@@ -173,6 +177,10 @@ main h3 {
 }
 
 /* HOVER */
+.logo:hover svg {
+    color: lime;
+}
+
 .hover-white:hover {
     color: #fff;
 }
@@ -184,9 +192,24 @@ main h3 {
 .nav-wrapper nav h4:hover {
     color: #fff;
     border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #141922, rgba(255,249,34), #141922);
+    border-image: linear-gradient(to right, #141922, lime, #141922);
     border-image-slice: 1;
-    width:100%;
+    margin-top: -3px;
+    animation: underline 0.5s;
+}
+
+.sections > div:hover {
+    border-left: 1px solid lime;
+    box-shadow: 0 0px 3px 0 rgba(255,255,255,0.5) inset;
+}
+
+@keyframes underline {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .album-img {
