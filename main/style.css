@@ -123,6 +123,7 @@ main .nav-wrapper nav {
 
 .col {
     width: calc((100% - 2rem) / 4);
+    flex-basis: fit-content;
     padding-bottom: 1rem;
 }
 
