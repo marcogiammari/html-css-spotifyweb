@@ -31,6 +31,9 @@
 .font8                      {font-size: clamp(0.5rem, 0.3793rem + 0.7722vw, 0.75rem);}
 .line-height24              {line-height: 1.5rem}
 .line-height32              {line-height: 2rem;}
+.radius-50                  {border-radius: 50%;}
+.pos-rel                    {position: relative;}
+.pos-abs                    {position: absolute;}
 
 
 

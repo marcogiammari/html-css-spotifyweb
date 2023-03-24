@@ -237,6 +237,29 @@ main h3 {
     visibility: visible;
 }
 
+.progress-wrapper i {
+    left: 23%;
+    display: none;
+}
+
+.progress-wrapper:hover i {
+    display: block;
+}
+
+.audio-settings .progress-bar + i {
+    left: 56%;
+    display: none;
+}
+
+.audio-settings:hover .progress-bar + i {
+    display: block;
+}
+
+.progress-wrapper:hover .progress-bar,
+.audio-settings:hover .progress-bar {
+    background: linear-gradient(to left, #7a7a7a 80%, lime 20%);
+}
+
 /* MEDIA QUERIES */
 
 /* 320px — 480px: Mobile devices
