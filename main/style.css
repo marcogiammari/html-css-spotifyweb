@@ -225,12 +225,12 @@ main h3 {
 }
 
 .play-hover {
+    font-size: 4rem;
     visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
 }
 
 .album-img:hover .play-hover {
