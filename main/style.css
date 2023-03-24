@@ -28,6 +28,7 @@ body > .container {
 
 body {
     min-height: -webkit-fill-available;
+    background-color: #141922;
 }
 
 html {
@@ -88,6 +89,7 @@ header > nav p {
 /* MAIN */
 main {
     overflow-y: auto;
+    padding-top: 6rem;
 }
 
 main img {
@@ -95,12 +97,13 @@ main img {
 }
 
 .upgrade-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
     min-height: 10vh;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
+    width: calc(100% - 12rem);
 }
 
 .upgrade-bar button {
