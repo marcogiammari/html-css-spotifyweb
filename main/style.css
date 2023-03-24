@@ -103,7 +103,7 @@ main img {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
-    width: calc(100% - 12rem);
+    width: calc(100% - 2rem);
 }
 
 .upgrade-bar button {
@@ -261,6 +261,10 @@ main h3 {
 
     .col {
         width: calc((100% - 3rem) / 3);
+    }
+
+    .upgrade-bar {
+        width: calc(100% - 12rem);
     }
 }
 
