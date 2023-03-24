@@ -23,6 +23,11 @@ ul {
 
 body > .container {
     max-height: calc(100vh - 10vh);
+    min-height: -webkit-fill-available;
+}
+
+html {
+    min-height: -webkit-fill-available;
 }
 
 /* HEADER */
