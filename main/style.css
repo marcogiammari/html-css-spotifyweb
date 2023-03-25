@@ -23,16 +23,16 @@ ul {
 
 body > .container {
     max-height: calc(100vh - 10vh);
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
 }
 
 body {
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
     background-color: #141922;
 }
 
 html {
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
 }
 
 /* HEADER */
